@@ -1,8 +1,8 @@
-<?php
+<?php.
 session_start();
 include 'db_connect.php';
 
-$username_email = $_POST['username'];
+$username_email = $_POST['username']; // fetching username using post method.
 $password = $_POST['password'];
 
 $sql = "SELECT * FROM users WHERE username='$username_email' OR email='$username_email'";
